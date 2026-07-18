@@ -1,0 +1,20 @@
+# Dependencies
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+server/.env
+client/.env
+
+# Uploaded images
+server/uploads/*
+
+# Keep the uploads folder
+!server/uploads/.gitkeep
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
