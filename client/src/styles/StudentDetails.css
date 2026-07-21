@@ -1,0 +1,68 @@
+/* ==========================
+   STUDENT DETAILS PAGE
+========================== */
+
+.container {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.student-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  border: 4px solid #0d6efd;
+}
+
+.student-name {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.student-info p {
+  font-size: 17px;
+  margin: 14px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.student-info strong {
+  color: #0d6efd;
+}
+
+.details-back-btn {
+  display: block;
+  width: 220px;
+  margin: 30px auto 0;
+  padding: 12px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.details-back-btn:hover {
+  background: #677988;
+}
