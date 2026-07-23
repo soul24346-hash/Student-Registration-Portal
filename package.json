@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "react-router-dom": "^7.18.1"
+  "name": "student-registration-portal",
+  "private": true,
+  "scripts": {
+    "start": "cd server && npm start"
   }
 }
