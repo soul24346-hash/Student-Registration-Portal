@@ -43,9 +43,9 @@ function Register() {
       data.append("address", formData.address);
       data.append("profileImage", formData.profileImage);
 
-      const response = await axios.post(
+     const response = await axios.post(
   `${API_URL}/api/students/register`,
-  formData
+  data
 );
 
       alert(response.data.message);

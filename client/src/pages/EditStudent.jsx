@@ -21,22 +21,23 @@ function EditStudent() {
   }, []);
 
   const fetchStudent = async () => {
-    try {
-      await axios.get(
+  try {
+    const response = await axios.get(
   `${API_URL}/api/students/${id}`
 );
-      setFormData({
-        fullName: response.data.student.fullName,
-        email: response.data.student.email,
-        phone: response.data.student.phone,
-        course: response.data.student.course,
-        address: response.data.student.address,
-      });
-    } catch (error) {
-      console.error(error);
-      alert("Failed to load student.");
-    }
-  };
+
+    setFormData({
+      fullName: response.data.student.fullName,
+      email: response.data.student.email,
+      phone: response.data.student.phone,
+      course: response.data.student.course,
+      address: response.data.student.address,
+    });
+  } catch (error) {
+    console.error(error);
+    alert("Failed to load student.");
+  }
+};
 
   const handleChange = (e) => {
     setFormData({
